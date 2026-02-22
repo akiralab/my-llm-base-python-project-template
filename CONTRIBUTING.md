@@ -28,10 +28,13 @@ uv run pre-commit install
 PR作成前に以下を実行する。
 
 ```bash
+uv run pre-commit run --all-files
 uv run ruff check .
 uv run mypy src tests
 uv run pytest
 ```
+
+`pre-commit` では CI と同等に `ruff` / `mypy` / `pytest` が実行されます。
 
 ## 5. PRルール
 

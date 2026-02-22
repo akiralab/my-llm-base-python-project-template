@@ -34,6 +34,7 @@ uv run mlops-template --help
 - チーム運用ルール: `docs/team-rules.md`
 - レビューしやすいPR運用: `docs/reviewer-friendly-pr-rules.md`
 - ブランチ保護設定手順: `docs/github-branch-protection.md`
+- mypy/pytestチェックガイド: `docs/mypy-pytest-check-guidelines.md`
 - VS Code推奨設定: `docs/vscode-library-recommendations.md`
 - 日本語Docstringガイド: `docs/docstring_ja_style.md`
 - LLMコンテキスト管理: `docs/llm-context/README.md`
