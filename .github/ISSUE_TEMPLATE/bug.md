@@ -2,7 +2,7 @@
 name: Bug report
 about: 不具合を報告する
 title: "[Bug] "
-labels: bug
+labels: bug, mlops
 assignees: ""
 ---
 
@@ -30,3 +30,10 @@ assignees: ""
 - OS:
 - Python:
 - Commit SHA:
+
+## 推奨ラベル確認（必要に応じて追加）
+
+- [ ] docs
+- [ ] ci
+- [ ] testing
+- [ ] dependencies

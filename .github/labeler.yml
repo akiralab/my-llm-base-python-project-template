@@ -1,0 +1,55 @@
+docs:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "docs/**"
+          - "README.md"
+          - "CONTRIBUTING.md"
+          - "CHANGELOG.md"
+          - "CLAUDE.md"
+          - "AGENTS.md"
+          - ".github/pull_request_template.md"
+          - ".github/ISSUE_TEMPLATE/**"
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file:
+          - ".github/workflows/**"
+          - ".pre-commit-config.yaml"
+          - ".github/labeler.yml"
+
+mlops:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "src/**"
+          - "tests/**"
+          - "pyproject.toml"
+          - "uv.lock"
+          - ".python-version"
+
+testing:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "tests/**"
+          - ".github/workflows/**"
+          - "docs/mypy-pytest-check-guidelines.md"
+
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "pyproject.toml"
+          - "uv.lock"
+          - ".python-version"
+
+bug:
+  - head-branch:
+      - "^bugfix/"
+      - "^fix/"
+
+feature:
+  - head-branch:
+      - "^feature/"
+      - "^feat/"
+
+release:
+  - head-branch:
+      - "^release/"
