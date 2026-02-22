@@ -5,16 +5,20 @@ LLM（Codex / Claude）との協調開発を前提にした、チーム開発向
 
 ## 特徴
 
+- Python 3.13+ 前提
 - `uv` による環境・依存・実行管理（`poetry` 不使用）
+- 標準データ分析スタックを同梱（`numpy` / `pandas` / `scipy` / `matplotlib` / `seaborn` / `geopandas`）
 - `ruff`（lint）/ `mypy`（型）/ `pytest`（テスト + カバレッジ）をCI必須
 - `pre-commit` でCIと同種の `ruff` lintをローカル実行
 - `argparse` ベースのCLI雛形
 - `loguru` による実行環境ログ出力
+- パス操作は `pathlib.Path` を優先（`os` 利用を最小化）
 - TDD前提の運用ドキュメント同梱
 
 ## クイックスタート
 
 ```bash
+uv python install 3.13
 uv sync --extra dev
 uv run pre-commit install
 uv run pytest

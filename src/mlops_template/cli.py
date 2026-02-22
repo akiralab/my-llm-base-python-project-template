@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 from collections.abc import Sequence
+from pathlib import Path
 
 from loguru import logger
 
@@ -33,6 +34,12 @@ def build_parser() -> argparse.ArgumentParser:
         choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"],
         help="ログレベルを指定します。",
     )
+    parser.add_argument(
+        "--output-dir",
+        type=Path,
+        default=Path("outputs"),
+        help="出力ディレクトリ。Pathlib.Pathとして解決して利用します。",
+    )
     return parser
 
 
@@ -46,7 +53,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     log_runtime_context(runtime_context)
 
     seed = set_global_seed(args.seed)
+    output_dir = args.output_dir.expanduser().resolve()
+    output_dir.mkdir(parents=True, exist_ok=True)
     logger.info("seed={} を設定しました。", seed)
+    logger.info("output_dir={} を利用します。", output_dir)
     logger.info("テンプレートCLIの実行が完了しました。")
     return 0
 

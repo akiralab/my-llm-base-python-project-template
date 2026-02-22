@@ -11,6 +11,7 @@
 - ソース配置: `src/` レイアウト
 - テスト配置: `tests/`
 - CLI入口: `src/mlops_template/cli.py`
+- パス操作方針: `pathlib.Path` を標準採用（`os` 依存は最小化）
 - 共通機能:
   - ログ基盤: `src/mlops_template/logging_utils.py`
   - 再現性基盤: `src/mlops_template/repro.py`
@@ -43,5 +44,7 @@
 
 ## 6. 拡張指針
 
+- ベース環境は Python 3.13+ を利用する。
+- 標準依存として `numpy` / `pandas` / `scipy` / `matplotlib` / `seaborn` / `geopandas` を含める。
 - 実案件では `src/mlops_template/` をドメイン名パッケージへ変更する。
 - 実験追跡・データ版管理は要件確定後に段階導入する。
