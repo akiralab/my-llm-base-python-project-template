@@ -11,12 +11,20 @@
 
 ### 2.1 ツールチェーン
 
+- Pythonは `3.13+` を使用する。
 - Python環境・依存管理は `uv` を単独採用する（`poetry` は採用しない）。
 - Lintは `ruff` を採用し、CIで必須化する。
 - 型チェックは `mypy` を採用し、CIで必須化する。
 - テストは `pytest` を採用し、CIで `tests/` を必ず実行する。
 - カバレッジ閾値（初期値: 80%）をCIで必須化する。
 - `pre-commit` でCIと同種の `ruff` lintを実行する。
+- 標準ライブラリセットとして以下を依存管理に含める:
+  - `numpy`
+  - `pandas`
+  - `scipy`
+  - `matplotlib`
+  - `seaborn`
+  - `geopandas`
 
 ### 2.2 Git/GitHub運用
 
@@ -30,6 +38,7 @@
 
 - TDD（Red -> Green -> Refactor）を基本とする。
 - CLI引数管理は `argparse` を標準とする。
+- ファイルパス操作は `pathlib.Path` を優先し、`os` の利用は最小化する。
 - 実行環境ログ（日時・Git SHA・Python/OS・依存バージョン）を出力可能にする。
 - 乱数Seedを固定可能にし、実験再現性を担保する。
 - ロガーは可読性重視で `loguru` を標準採用する。
