@@ -33,6 +33,7 @@ uv run mlops-template --help
 - 設計仕様書: `docs/specification.md`
 - チーム運用ルール: `docs/team-rules.md`
 - レビューしやすいPR運用: `docs/reviewer-friendly-pr-rules.md`
+- リリースタグ発行ガバナンス: `docs/release-tag-governance.md`
 - Pythonツール運用（uv/ruff/pytest/mypy）: `docs/python-tooling-operations-guide.md`
 - GitHub開発基本（fetch/commit/pull/push/pre-commit）: `docs/github-development-basics.md`
 - ラベル（タグ）運用: `docs/label-taxonomy.md`

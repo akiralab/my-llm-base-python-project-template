@@ -62,6 +62,7 @@
   3. `main` へマージ
   4. Git tag（例: `v1.2.3`）を発行
   5. GitHub Releaseを作成
+- タグ発行可否の客観判定は `docs/release-tag-governance.md` に従う。
 
 ## 7. ドキュメント運用
 
