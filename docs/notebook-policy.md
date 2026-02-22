@@ -25,6 +25,7 @@ cp notebooks/template.ipynb notebooks/local/my-analysis.ipynb
 
 - `src` 配下をimportできるPATH設定
 - 基本ライブラリのimport（`numpy`, `pandas`, `scipy`, `matplotlib`, `seaborn`, `geopandas`）
+- 日本語文字化けを避ける `matplotlib.rcParams` 設定（日本語フォント候補 + `axes.unicode_minus=False`）
 - 最小限の可視化サンプル
 
 ## 5. 更新ルール
