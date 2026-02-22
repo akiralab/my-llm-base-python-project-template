@@ -17,7 +17,7 @@
 - 型チェックは `mypy` を採用し、CIで必須化する。
 - テストは `pytest` を採用し、CIで `tests/` を必ず実行する。
 - カバレッジ閾値（初期値: 80%）をCIで必須化する。
-- `pre-commit` でCIと同種の `ruff` lintを実行する。
+- `pre-commit` でCIと同等の `ruff` / `mypy` / `pytest` を実行する。
 - 標準ライブラリセットとして以下を依存管理に含める:
   - `numpy`
   - `pandas`
