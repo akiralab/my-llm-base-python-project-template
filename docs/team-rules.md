@@ -68,6 +68,7 @@
 - `README.md` は常時最新化する。
 - 仕様変更時は `docs/specification.md` を同PRで更新する。
 - ルール変更時は本書（`docs/team-rules.md`）を同PRで更新する。
+- Notebook運用は `docs/notebook-policy.md` に従う。
 
 ## 8. LLM運用
 

@@ -52,6 +52,7 @@
 - `CLAUDE.md` と `AGENTS.md` を同義で配置する。
 - 設計仕様書 `docs/specification.md` を配置する。
 - チーム運用ルール `docs/team-rules.md` を配置する。
+- Notebook運用ルール `docs/notebook-policy.md` を配置する。
 - 日本語Docstringガイド `docs/docstring_ja_style.md` を配置する。
 - LLMコンテキスト管理ガイド `docs/llm-context/README.md` を配置する。
 - SKILL運用ガイド `docs/skills.md` を配置する。
