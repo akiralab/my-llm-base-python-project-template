@@ -1,7 +1,8 @@
 """再現性ユーティリティのテスト。"""
 
-import os
 import random
+
+import numpy as np
 
 from mlops_template.repro import set_global_seed
 
@@ -14,7 +15,9 @@ def test_set_global_seed_reproduces_random_sequence() -> None:
     assert first == second
 
 
-def test_set_global_seed_sets_pythonhashseed_env() -> None:
-    seed = set_global_seed(777)
-    assert seed == 777
-    assert os.environ["PYTHONHASHSEED"] == "777"
+def test_set_global_seed_reproduces_numpy_sequence() -> None:
+    set_global_seed(777)
+    first = np.random.random(3).tolist()
+    set_global_seed(777)
+    second = np.random.random(3).tolist()
+    assert first == second
