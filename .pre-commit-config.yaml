@@ -6,3 +6,13 @@ repos:
         entry: uv run ruff check .
         language: system
         pass_filenames: false
+      - id: mypy-check
+        name: mypy-check
+        entry: uv run mypy src tests
+        language: system
+        pass_filenames: false
+      - id: pytest-check
+        name: pytest-check
+        entry: uv run pytest
+        language: system
+        pass_filenames: false
