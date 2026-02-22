@@ -32,6 +32,7 @@ uv run mlops-template --help
 - 要件仕様（Must/Should）: `docs/requirements.md`
 - 設計仕様書: `docs/specification.md`
 - チーム運用ルール: `docs/team-rules.md`
+- レビューしやすいPR運用: `docs/reviewer-friendly-pr-rules.md`
 - ブランチ保護設定手順: `docs/github-branch-protection.md`
 - VS Code推奨設定: `docs/vscode-library-recommendations.md`
 - 日本語Docstringガイド: `docs/docstring_ja_style.md`
