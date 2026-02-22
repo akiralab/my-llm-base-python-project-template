@@ -14,6 +14,17 @@
 
 - 
 
+## Labels（GitHubで設定）
+
+- [ ] docs
+- [ ] ci
+- [ ] mlops
+- [ ] bug
+- [ ] feature
+- [ ] release
+- [ ] testing
+- [ ] dependencies
+
 ## 影響範囲
 
 - [ ] 既存機能への影響なし

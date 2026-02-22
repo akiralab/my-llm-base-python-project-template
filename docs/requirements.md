@@ -60,6 +60,8 @@
 
 - Issueテンプレート（`Bug` / `Feature`）を配置する。
 - PRテンプレートを配置する。
+- PR/Issue向けラベル体系（`docs`, `ci`, `mlops`, `bug`, `feature` 等）を運用する。
+- ラベル運用ルールを `docs/label-taxonomy.md` に明記する。
 - PRテンプレートに以下を含める:
   - 優先度/緊急度
   - 背景/目的

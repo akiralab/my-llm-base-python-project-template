@@ -2,7 +2,7 @@
 name: Feature request
 about: 機能追加を提案する
 title: "[Feature] "
-labels: enhancement
+labels: feature, mlops
 assignees: ""
 ---
 
@@ -20,3 +20,10 @@ assignees: ""
 
 ## 補足
 
+
+## 推奨ラベル確認（必要に応じて追加）
+
+- [ ] docs
+- [ ] ci
+- [ ] testing
+- [ ] dependencies
