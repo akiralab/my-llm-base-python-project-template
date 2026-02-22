@@ -30,6 +30,8 @@ uv run ruff check .
 - `pyproject.toml` を変更したら `uv lock` を実行し、`uv.lock` も同時コミットする。
 - CIと同じ実行経路にするため、コマンドは `uv run ...` で統一する。
 - Pythonバージョン差異を避けるため、`.python-version` を常に確認する。
+- Jupyter利用時は `uv sync --extra dev` 実行後、`.venv` カーネルを選択する。
+- VS CodeでのNotebook環境構築は `docs/vscode-jupyter-environment-setup.md` を参照する。
 
 ## 3. ruff（Lint/Format）
 
