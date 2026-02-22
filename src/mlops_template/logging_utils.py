@@ -9,6 +9,7 @@ import sys
 from collections.abc import Iterable
 from datetime import UTC, datetime
 from importlib import metadata
+from pathlib import Path
 
 from loguru import logger
 
@@ -59,6 +60,7 @@ def collect_runtime_context(extra_packages: Iterable[str] | None = None) -> dict
         "git_sha": _get_git_sha(),
         "python_version": platform.python_version(),
         "platform": platform.platform(),
+        "cwd": str(Path.cwd()),
         "packages": json.dumps(package_versions, ensure_ascii=False, sort_keys=True),
     }
 
