@@ -33,6 +33,7 @@ uv run mlops-template --help
 - 設計仕様書: `docs/specification.md`
 - チーム運用ルール: `docs/team-rules.md`
 - レビューしやすいPR運用: `docs/reviewer-friendly-pr-rules.md`
+- リリースタグ発行ガバナンス: `docs/release-tag-governance.md`
 - Notebook運用ルール: `docs/notebook-policy.md`
 - VS Code向けJupyter環境構築: `docs/vscode-jupyter-environment-setup.md`
 - Pythonツール運用（uv/ruff/pytest/mypy）: `docs/python-tooling-operations-guide.md`
