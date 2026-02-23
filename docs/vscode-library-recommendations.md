@@ -69,3 +69,4 @@
 
 - ワークスペース設定を変更した場合は、PRで本ドキュメントも更新する。
 - 推奨拡張の追加・削除はチーム合意のうえで反映する。
+- Notebook環境構築とトラブル対応は `docs/vscode-jupyter-environment-setup.md` を参照する。

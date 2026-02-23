@@ -21,6 +21,11 @@ cp notebooks/template.ipynb notebooks/local/my-analysis.ipynb
 - `notebooks/local/*.ipynb` は `.gitignore` により追跡されない。
 - 解析Notebookは原則ローカル運用し、成果は `.py` / `.md` / 画像などで共有する。
 
+## 3.1 VS Codeでの環境構築
+
+- 手順は `docs/vscode-jupyter-environment-setup.md` を参照する。
+- 特に `uv sync --extra dev` と Notebookカーネルの `.venv` 選択を必須とする。
+
 ## 4. テンプレートNotebookに含める内容
 
 - `src` 配下をimportできるPATH設定
